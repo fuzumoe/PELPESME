@@ -1,0 +1,51 @@
+plugins {
+  id "com.github.johnrengelman.shadow" version "1.2.3"
+  id 'java'
+  id 'eclipse'
+
+}
+
+
+apply from: 'javafx.plugin'
+
+sourceCompatibility = 1.8
+version = '0.0'
+ 
+
+javafx {
+  mainClass = 'com.sfb805.application.GUImain'
+}
+
+repositories {
+
+    jcenter()
+}
+
+
+jar {
+    manifest {
+       attributes 'Main-Class': 'com.sfb805.application.GUImain'
+      //  attributes 'Main-Class': 'com.sfb805.udo.UDOCollection'
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'repo', include: '*.jar')
+   	
+    compile "net.sourceforge.owlapi:pellet-profiler-ignazio1977:2.4.0-ignazio1977"
+ 	compile 'net.sourceforge.owlapi:org.semanticweb.hermit:1.3.8.500'
+    compile "junit:junit:4.12"
+    compile 'net.sourceforge.owlapi:owlapi-distribution:5.0.0'
+    compile 'org.openrdf.sesame:sesame-runtime:2.8.6'
+    compile 'org.tukaani:xz:1.5'
+       
+}
+
+
+task wrapper(type:Wrapper){
+	gradleVersion='2.12'
+}
+
+

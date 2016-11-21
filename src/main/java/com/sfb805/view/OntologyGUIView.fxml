@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="728.0" prefWidth="1361.0" stylesheets="@../view/application.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sfb805.controller.Controller">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="441.0" prefWidth="1348.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="423.0" layoutY="107.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="772.0">
+                     <children>
+                        <Pane layoutX="12.0" layoutY="10.0" prefHeight="467.0" prefWidth="451.0" styleClass="Pane" />
+                     </children>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <Pane layoutX="433.0" layoutY="107.0" prefHeight="298.0" prefWidth="547.0" AnchorPane.leftAnchor="433.0">
+                     <children>
+                        <Pane layoutX="-10.0" layoutY="9.0" prefHeight="468.0" prefWidth="420.0" styleClass="Pane" />
+                     </children>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Pane>
+                  <Pane layoutX="685.0" layoutY="107.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="298.0" prefWidth="526.0" AnchorPane.rightAnchor="50.0">
+                     <children>
+                        <Pane layoutX="-8.0" layoutY="10.0" prefHeight="468.0" prefWidth="418.0" styleClass="Pane" />
+                     </children>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Pane>
+               </children>
+            </HBox>
+         </center>
+         <top>
+            <Pane fx:id="header" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="header">
+               <children>
+                  <Label fx:id="label" layoutX="35.0" layoutY="14.0" prefHeight="58.0" prefWidth="394.0" text="     PELOPS" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="47.0" />
+                     </font></Label>
+                  <Label id="logo" layoutX="1169.0" layoutY="4.0" prefHeight="65.0" prefWidth="171.0" />
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea fx:id="textArea" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="145.0" prefWidth="1356.0" style="-fx-background-color: black;" styleClass="textArea">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+      <HBox alignment="CENTER" layoutX="-4.0" layoutY="96.0" snapToPixel="false" spacing="10.0" styleClass="porgress-bar" AnchorPane.bottomAnchor="144.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="96.0">
+         <children>
+            <Pane layoutY="177.0" prefHeight="291.0" prefWidth="181.0" AnchorPane.leftAnchor="0.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Pane fx:id="firstLowerPane" layoutX="53.0" layoutY="105.0" prefHeight="269.0" prefWidth="368.0" styleClass="inner-pane">
+                     <children>
+                        <Button id="nx" layoutX="50.0" layoutY="46.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="257.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="firstUpperPane" layoutX="5.0" layoutY="-10.0" prefHeight="469.0" prefWidth="444.0">
+                     <children>
+                        <Accordion fx:id="accordionOne" layoutX="46.0" layoutY="46.0" prefHeight="230.0" prefWidth="349.0" style="-fx-border-radius: 20;">
+                          <panes>
+                            <TitledPane animated="false" prefHeight="128.0" prefWidth="281.0" text="Uncertainity B" textAlignment="CENTER" textFill="WHITE">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="title-pane">
+                                       <children>
+                                          <Button fx:id="btnOneOne" layoutX="45.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonOneOne" prefHeight="67.0" prefWidth="78.0" text="P" />
+                                          <Button fx:id="btnOneTwo" layoutX="143.0" layoutY="8.0" mnemonicParsing="false" onAction="#handlButtonOneTwo" prefHeight="67.0" prefWidth="75.0" text="E" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                                 <font>
+                                    <Font name="System Italic" size="14.0" />
+                                 </font>
+                            </TitledPane>
+                            <TitledPane animated="false" prefHeight="61.0" prefWidth="265.0" text="Class B" textFill="WHITE">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="263.0" styleClass="title-pane">
+                                       <children>
+                                          <Button fx:id="btnTwoOne" layoutX="18.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonTwoOne" prefHeight="61.0" prefWidth="102.0" text="Individual" />
+                                          <Button fx:id="btnTwoTwo" layoutX="135.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonTwoTwo" prefHeight="61.0" prefWidth="98.0" text="Class" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                                 <font>
+                                    <Font name="System Italic" size="14.0" />
+                                 </font>
+                            </TitledPane>
+                            <TitledPane animated="false" text="Direction B" textFill="WHITE">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="64.0" prefWidth="263.0" styleClass="title-pane">
+                                       <children>
+                                          <Button fx:id="btnThreeOne" layoutX="27.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonThreeOne" prefHeight="60.0" prefWidth="49.0" text="S" />
+                                          <Button fx:id="btnThreeTwo" layoutX="107.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonThreeTwo" prefHeight="61.0" prefWidth="49.0" text="P" />
+                                          <Button fx:id="btnThreeThree" layoutX="187.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonThreeThree" prefHeight="62.0" prefWidth="50.0" text="O" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                                 <font>
+                                    <Font name="System Italic" size="14.0" />
+                                 </font>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                        <Button fx:id="restoreOne" layoutX="174.0" layoutY="-8.0" mnemonicParsing="false" onAction="#hanldeRestoreButtonOne" text="Restore" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="btnOne" layoutX="-44.0" layoutY="-45.0" mnemonicParsing="false" onAction="#handleButtonOne" prefHeight="116.0" prefWidth="86.0" styleClass="forward-button" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane prefHeight="436.0" prefWidth="402.0" AnchorPane.leftAnchor="299.0" AnchorPane.topAnchor="119.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Pane fx:id="secondLowerPane" layoutX="159.0" layoutY="107.0" prefHeight="269.0" prefWidth="368.0" styleClass="inner-pane">
+                     <children>
+                        <Button id="owl" layoutX="53.0" layoutY="50.0" mnemonicParsing="false" prefHeight="151.0" prefWidth="257.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="secondUpperPane" layoutX="126.0" prefHeight="458.0" prefWidth="413.0">
+                     <children>
+                        <Button fx:id="restoreTwo" layoutX="151.0" layoutY="-20.0" mnemonicParsing="false" onAction="#hanldeRestoreButtonTwo" text="Restore" />
+                        <Pane fx:id="paneBoxThree" layoutX="47.0" layoutY="22.0" prefHeight="422.0" prefWidth="329.0" styleClass="big-container">
+                           <children>
+                              <Button fx:id="btnBoxThree" layoutX="65.0" layoutY="376.0" mnemonicParsing="false" onAction="#handlebtnBoxThree" prefHeight="35.0" prefWidth="215.0" text="A BOX 2" />
+                              <Pane fx:id="paneBoxOne" layoutX="26.0" layoutY="23.0" prefHeight="325.0" prefWidth="278.0" styleClass="big-container">
+                                 <children>
+                                    <Pane fx:id="paneBoxTwo" layoutX="29.0" layoutY="63.0" prefHeight="239.0" prefWidth="220.0" styleClass="big-container">
+                                       <children>
+                                          <Button fx:id="btnBoxTwo" layoutX="3.0" layoutY="187.0" mnemonicParsing="false" onAction="#handlebtnBoxTwo" prefHeight="35.0" prefWidth="215.0" text="T-BOX" />
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="btnBoxOne" layoutX="27.0" layoutY="14.0" mnemonicParsing="false" onAction="#handlebtnBoxOne" prefHeight="35.0" prefWidth="220.0" text="T-BOX 1" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Button fx:id="btnTwo" layoutX="51.0" layoutY="-49.0" mnemonicParsing="false" onAction="#handleButtonTwo" prefHeight="116.0" prefWidth="107.0" styleClass="forward-button" />
+                  <Button fx:id="btnFive" layoutX="43.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleButtonFive" prefHeight="118.0" prefWidth="153.0" styleClass="backward-button" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Pane>
+            <Pane fx:id="thirdUpperPane" prefHeight="436.0" prefWidth="273.0" AnchorPane.leftAnchor="599.0" AnchorPane.topAnchor="119.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Pane fx:id="thirdLowerPane" prefHeight="458.0" prefWidth="413.0" styleClass="inner-pane">
+                     <children>
+                        <Button id="matlab" layoutX="78.0" layoutY="155.0" mnemonicParsing="false" prefHeight="151.0" prefWidth="257.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="thirdUpperPane" prefHeight="458.0" prefWidth="413.0">
+                     <children>
+                        <Button fx:id="restoreThrree" layoutX="151.0" layoutY="-21.0" mnemonicParsing="false" onAction="#hanldeRestoreButtonThree" text="Restore" />
+                        <Accordion layoutX="50.0" layoutY="26.0" prefHeight="361.0" prefWidth="329.0">
+                          <panes>
+                            <TitledPane animated="false" text="SPARQL QUERY" textFill="WHITE">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Accordion prefHeight="126.0" prefWidth="329.0">
+                                            <panes>
+                                              <TitledPane animated="false" text="untitled 1" textFill="#eee1e1">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                </content>
+                                              </TitledPane>
+                                              <TitledPane animated="false" text="untitled 2" textFill="WHITE">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                </content>
+                                              </TitledPane>
+                                            </panes>
+                                          </Accordion>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                            </TitledPane>
+                            <TitledPane animated="false" text="DL-QUERY " textFill="WHITE">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Accordion layoutY="1.0" prefHeight="314.0" prefWidth="329.0">
+                                            <panes>
+                                              <TitledPane animated="false" text="transitive" textFill="WHITE">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                </content>
+                                              </TitledPane>
+                                              <TitledPane animated="false" text="Class" textFill="WHITE">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                </content>
+                                              </TitledPane>
+                                            </panes>
+                                          </Accordion>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </Pane>
+                  <Button fx:id="btnFour" layoutX="-100.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleButtonFour" prefHeight="116.0" prefWidth="188.0" styleClass="backward-button" />
+                  <Button fx:id="btnThree" layoutX="-85.0" layoutY="-49.0" mnemonicParsing="false" onAction="#handleButtonThree" prefHeight="93.0" prefWidth="153.0" styleClass="forward-button" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>

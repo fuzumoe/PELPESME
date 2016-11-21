@@ -1,0 +1,247 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+ 
+   -fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(204.0,204.0,204.0) 0.0, rgb(179.0,179.0,179.0) 100.0 );
+
+}
+.big-container{
+	-fx-border-color:linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(153.0,153.0,153.0) 0.0, rgb(102.0,102.0,102.0) 100.0); 
+	-fx-border-color:rgb(46,52,54);
+	-fx-border-style: dotted ;
+	-fx-border-width: 2px;
+	-fx-border-radius: 10px;
+	}
+.big-container-borderless{
+   -fx-border-color:null;
+   
+   
+}
+#logo{
+	-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(255.0,255.0,255.0) 0.0, rgb(230.0,230.0,230.0) 100.0 );
+	-fx-background-color:rgb(255,255,255);
+	 -fx-graphic: url('icons/Logo_SFB.png');
+	 -fx-border-color:  rgb(0,0,0);
+	 -fx-border-style: solid ;
+	 -fx-border-radius: 5;
+	 -fx-border-insets: 3,3,3,3;
+	 -fx-background-radius: 5; 	
+	 -fx-background-insets: 3,3,3,3;
+	 
+}
+.inner-pane{
+	 
+ 
+	 
+}
+#matlab{
+	 -fx-background-image: url('icons/Matlab_Logo.png') ;
+	 -fx-background-color:rgb(255,255,255);
+}
+#owl{
+-fx-background-image: url('icons/owl2.png') ;
+	 -fx-background-color:rgb(255,255,255);	
+}
+#nx{
+	 -fx-background-image: url('icons/Siemens-logo.png') ;
+	 -fx-background-color:rgb(255,255,255);
+}
+.title-pane{
+   -fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(204.0,204.0,204.0) 0.0, rgb(179.0,179.0,179.0) 100.0 );
+}
+ 
+.accordion .titled-pane > *.content{
+    
+   -fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(242.0,242.0,242.0) 0.0, rgb(230.0,230.0,230.0) 100.0);
+   -fx-border-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(242.0,242.0,242.0) 0.0, rgb(230.0,230.0,230.0) 100.0);
+  
+}
+.accordion .titled-pane > .anchor{
+   -fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(242.0,242.0,242.0) 0.0, rgb(230.0,230.0,230.0) 100.0);
+   -fx-border-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(102.0,102.0,102.0) 0.0, rgb(0.0,0.0,0.0) 100.0);
+  
+}
+.porgress-bar{
+	 -fx-graphic: url('icons/progress.gif');
+}
+ 
+ .accordion .titled-pane > .title {
+  -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0.0%, #1f2429 20.0%, #191d22 100.0%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50.0% 0.0%, radius 100.0%, rgba(114.0,131.0,148.0,0.9), rgba(255.0,255.0,255.0,0.0));
+  -fx-background-insets: 0.0, 1.0, 2.0;
+  -fx-background-radius: 0.0 0.0 0.0 0.0, 0.0 0.0 0.0 0.0, 0.0 0.0 0.0 0.0;
+  -fx-padding: 0.166667em 1.166667em 0.25em 0.0; /* 2 14 3 0 */
+  -fx-color: -fx-focus-color;
+      -fx-effect: dropshadow( one-pass-box , rgba(0.0,0.0,0.0,0.9) , 1.0, 0.0 , 0.0 , 1.0 );
+  
+}
+ 
+ 
+ 
+
+
+.titled-pane > .title > .arrow-button .arrow 
+{
+  	 -fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(242.0,242.0,242.0) 0.0, rgb(230.0,230.0,230.0) 100.0);
+-fx-background-insets: 1.0 0.0 -1.0 0.0, 0.0;
+-fx-padding: 0.25em 0.3125em 0.25em 0.3125em; /* 3 3.75 3 3.75 */
+ 
+ }
+ 
+ .restore{
+ 	  -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0.0%, #1f2429 20.0%, #191d22 100.0%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50.0% 0.0%, radius 100.0%, rgba(114.0,131.0,148.0,0.9), rgba(255.0,255.0,255.0,0.0));
+    -fx-background-radius: 5.0,4.0,3.0,5.0;
+    -fx-background-insets: 0.0,1.0,2.0,0.0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12.0px;
+    -fx-padding: 10.0 20.0 10.0 20.0;
+ }
+ .restore Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0.0,0.0,0.0,0.9) , 1.0, 0.0 , 0.0 , 1.0 );
+}
+.restore:hover {
+    -fx-background-color:linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(128.0,128.0,128.0) 0.0, rgb(102.0,102.0,102.0) 100.0);
+  -fx-cursor: hand ;
+}
+.button {
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0.0%, #1f2429 20.0%, #191d22 100.0%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50.0% 0.0%, radius 100.0%, rgba(114.0,131.0,148.0,0.9), rgba(255.0,255.0,255.0,0.0));
+    -fx-background-radius: 5.0,4.0,3.0,5.0;
+    -fx-background-insets: 0.0,1.0,2.0,0.0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12.0px;
+    -fx-padding: 10.0 20.0 10.0 20.0;
+}
+.button Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0.0,0.0,0.0,0.9) , 1.0, 0.0 , 0.0 , 1.0 );
+}
+.button:hover {
+    -fx-background-color:linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(128.0,128.0,128.0) 0.0, rgb(102.0,102.0,102.0) 100.0);
+  -fx-cursor: hand ;
+}
+.Pane{
+	-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(255.0,255.0,255.0) 0.0, rgb(230.0,230.0,230.0) 100.0 );
+    
+    -fx-border-color:gray;
+    -fx-border-style:solid   ;
+    -fx-border-width: 3.0px;
+      -fx-border-raduis:20;
+
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+      -fx-background-radius:23;
+      -fx-border-radius:20;
+        -fx-effect: dropshadow(three-pass-box, derive(black, 10%), 15, 0, 2, 2); 
+   
+      
+    
+   
+}
+ 
+ 
+ 
+.textArea{
+	
+	 -fx-text-fill: white;
+	  -fx-background-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(51.0,51.0,51.0) 0.0, rgb(0.0,0.0,0.0) 100.0 );
+	 
+    
+}
+ 
+ .content {
+    -fx-background-color:rgb(0.0,0.0,0.0);
+    -fx-text-fill: white;
+   	     -fx-background-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(51.0,51.0,51.0) 0.0, rgb(0.0,0.0,0.0) 100.0 );
+
+     -fx-border-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(255.0,255.0,255.0) 0.0, rgb(0.0,0.0,0.0) 100.0 );
+}
+
+
+.forward-one-button{
+	
+   -fx-background-color: transparent;
+	 -fx-graphic: url('icons/forwardOneSmall.png');
+}
+.forward-one-button:hover{
+		 -fx-graphic: url('icons/forwardOneSmall.png');
+	
+   -fx-background-color: transparent;
+-fx-cursor:hand ;
+ -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+	   
+  
+	 
+}
+ 
+
+.forward-button{
+	
+ -fx-background-color: transparent;
+	 -fx-graphic: url('icons/forwardOneSmall.png');
+	 
+}
+.forward-button:hover{
+	
+ -fx-background-color: transparent;
+	  	   -fx-cursor:hand ;
+	  	       -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+	  	   	 -fx-graphic: url('icons/forwardOneBig.png');
+
+}
+.header{
+/*-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(230.0,77.0,77.0) 0.0, rgb(0.0,0.0,0.0) 100.0 );*/
+ -fx-background-color: rgb(185,15,34);
+	    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+   -fx-border-color: rgb(0,0,0);
+}
+ 
+ 
+.backward-button{
+	 -fx-background-color: transparent;
+	-fx-graphic: url('icons/backwardOneSmall.png');
+	
+	
+}
+.backward-one-button{
+	 -fx-background-color: transparent;
+	-fx-graphic: url('icons/backwardOneSmall.png');
+	
+}
+.backward-one-button:hover{
+	 -fx-background-color: transparent;
+	-fx-graphic: url('icons/backwardOneSmall.png');
+	
+}
+.backward-button:hover{
+	 -fx-background-color: transparent;
+	 	-fx-graphic: url('icons/backwardOneBig.png');
+	   -fx-cursor:hand ;
+	    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+	
+
+}
+ 
+/*.table-view {
+-fx-table-cell-border-color:derive(-fx-base,10.0%);
+-fx-table-header-border-color:derive(-fx-base,20.0%);
+} */
+
+ 
+ 
